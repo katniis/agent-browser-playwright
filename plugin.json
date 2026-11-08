@@ -1,0 +1,14 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "agent-browser-playwright",
+  "version": "0.1.0",
+  "description": "Coordinate agent-browser exploration with independent Playwright verification.",
+  "license": "MIT",
+  "keywords": [
+    "agent-browser",
+    "playwright",
+    "browser",
+    "testing",
+    "codex-skill"
+  ]
+}

@@ -1,0 +1,7 @@
+# Local browser traces and MCP snapshots; these may contain session data.
+/.playwright-mcp/
+
+# Internal planning, research, and benchmark artifacts are not release files.
+/.superpowers/
+/docs/superpowers/
+/docs/research/
