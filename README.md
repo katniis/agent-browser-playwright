@@ -8,16 +8,27 @@ Help Codex explore unfamiliar websites and verify what happened—without two to
 
 Experimental. Developed and tested under Codex only; other agent hosts have not been validated.
 
-## Get started
+## Install in Codex
 
-The combined workflow uses [Vercel Labs' agent-browser](https://github.com/vercel-labs/agent-browser) and [Microsoft Playwright](https://github.com/microsoft/playwright), plus their browser runtimes. Install those tools separately; this repository contains the skill instructions. If your task is a known, repeatable flow, you can use Playwright alone.
+> **Choose one option to install the skill:**
 
-Choose one way to install the skill in Codex:
+### Option 1: Install the skill directly
 
-- **Install the skill directly:** use Codex's `$skill-installer` and give it this skill folder: [`skills/agent-browser-playwright`](https://github.com/katniis/agent-browser-playwright/tree/main/skills/agent-browser-playwright).
-- **Install it as a plugin:** run `codex plugin marketplace add katniis/agent-browser-playwright`. Then open Codex's Plugins Directory, choose this marketplace, and install `agent-browser-playwright`. If it does not appear, restart Codex and check again.
+In Codex, use `$skill-installer` and provide the [skill folder on GitHub](https://github.com/katniis/agent-browser-playwright/tree/main/skills/agent-browser-playwright).
 
-Once installed, ask Codex: “Use `agent-browser-playwright` to handle this browser task and verify the result.”
+### Option 2: Install it as a plugin
+
+1. Add this repository's marketplace:
+
+   ```bash
+   codex plugin marketplace add katniis/agent-browser-playwright
+   ```
+
+2. In Codex, open the Plugins Directory, choose this marketplace, and install `agent-browser-playwright`. If it does not appear, restart Codex and check again.
+
+> **Tools needed:** For the combined workflow, install [Vercel Labs' agent-browser](https://github.com/vercel-labs/agent-browser), [Microsoft Playwright](https://github.com/microsoft/playwright), and their browser runtimes separately. This repository contains the skill instructions only. Known, repeatable flows can use Playwright alone.
+
+After installing the skill, ask Codex: “Use `agent-browser-playwright` to handle this browser task and verify the result.”
 
 ## How it works
 
